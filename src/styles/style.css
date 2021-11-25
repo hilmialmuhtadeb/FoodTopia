@@ -36,6 +36,7 @@ body {
   width: 100%;
   padding: 20px 60px;
   background-color: #ededed;
+  z-index: 9;
 }
 .app-bar__logo {
   font-size: 1.4em;
@@ -79,20 +80,26 @@ body {
   hero
 */
 hero-section {
-  background-image: url('../public/image/hero.jpg');
-  background-size: cover;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 40px;
+  position: relative;
+  }
+
+  .hero-section__image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+  }
+
+  .hero-section__text {
+    position: absolute;
+    bottom: 200px;
+    right: 100px;
   color: white;
-  text-shadow: 0px 0px 10px black;
+  text-shadow: 2px 2px 10px rgb(0, 0, 0);
+  font-size: 1.2em;
 }
-hero-section h2 {
+.hero-section__text h2 {
+  font-family: 'Open Sans';
   font-size: 2.5em;
-  font-family: 'open sans';
 }
 
 /*

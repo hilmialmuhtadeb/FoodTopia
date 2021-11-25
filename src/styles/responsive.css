@@ -59,9 +59,13 @@
   /* 
     hero
   */
- hero-section {
-   align-items: flex-start;
- }
+  .hero-section__text {
+    left: 20px;
+  }
+
+  .hero-section__text h2 {
+    font-size: 2em;
+  }
 
   /* 
     contents
