@@ -1,0 +1,97 @@
+@media screen and (max-width: 1000px) {
+  .app-bar {
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+
+  #restaurants {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+
+  /* 
+    detail page
+  */
+  .restaurant-detail__image {
+    width: 80%;
+  }
+  .restaurant-detail__reviews-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 685px) {
+  .app-bar {
+    display: block;
+    padding: 10px 20px;
+  }
+
+  .app-bar__navigation {
+    position: absolute;
+    top: 60px;
+    right: 100%;
+    width: 100%;
+    background-color: #ededed;
+    transition: .3s;
+  }
+
+  .app-bar__navigation.show {
+    right: 0px;
+  }
+
+  .app-bar__navigation ul li {
+    display: block;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .app-bar__navigation ul li a {
+    padding: 20px;
+  }
+  
+  #hamburgerButton {
+    display: block;
+  }
+
+  /* 
+    hero
+  */
+ hero-section {
+   align-items: flex-start;
+ }
+
+  /* 
+    contents
+  */
+  #restaurants {
+    grid-template-columns: 1fr;
+  }
+  .content {
+    padding: 30px;
+  }
+
+  /* 
+    detail page
+  */
+  .restaurant {
+    padding: 100px 30px 50px;
+  }
+  .restaurant-detail__image {
+    height: 250px;
+    width: 100%;
+  }
+  .restaurant-detail__description {
+    text-align: justify;
+    text-indent: 2em;
+    padding: 0;
+  }
+  .restaurant-detail__reviews-container {
+    grid-template-columns: 1fr;
+  }
+  .restaurant-detail__add-review {
+    width: 80%;
+  }
+}
