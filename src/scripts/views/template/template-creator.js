@@ -1,6 +1,4 @@
 import CONFIG from '../../global/config';
-import '../../components/review-bar';
-import '../../components/restaurant-item';
 
 const createReviewCardItem = (review) => `
   <div class="review-card">

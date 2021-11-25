@@ -3,6 +3,8 @@ import UrlParser from '../routes/url-parser';
 import DrawerInitiator from '../utils/drawer-initiator';
 import '../components/hero-section';
 import '../components/app-footer';
+import '../components/review-bar';
+import '../components/restaurant-item';
 
 class App {
   constructor({ hamburger, drawer, content }) {

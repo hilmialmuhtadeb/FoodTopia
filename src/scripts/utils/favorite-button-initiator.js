@@ -2,11 +2,11 @@ import FavoriteRestaurantIdb from '../data/favorite-restaurant-idb';
 import { createFavoriteButtonTemplate, createFavoritedButtonTemplate } from '../views/template/template-creator';
 
 const favoriteButtonInitiator = {
-  init({ favoriteButtonContainer, restaurant }) {
+  async init({ favoriteButtonContainer, restaurant }) {
     this._favoriteButtonContainer = favoriteButtonContainer;
     this._restaurant = restaurant;
 
-    this.renderButton();
+    await this.renderButton();
   },
 
   async renderButton() {
